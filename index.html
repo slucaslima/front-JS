@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programação IV</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+<body>
+    <h1 class="display-6 text-center">Clientes API</h1>
+    <main>
+        <div class="text-center">
+            <button class="btn btn-secondary btn-sm" onclick="get()">Listar Clientes</button>
+            <button class="btn btn-secondary btn-sm" onclick="cadastro()">Cadastrar Cliente</button>
+        </div>
+        <h1></h1>
+        <h1></h1>
+        <div class="visually-hidden" id="form">
+            <form class="form-control" id="myForm">
+                <label for="name">Nome</label>
+                    <input class="input-
+                    group mb-3 form-control" type="text" name="nome" id="nome">
+                <label for="name">Documento</label>
+                    <input class="input-group mb-3 form-control" type="text" name="documento" id="documento">
+                <input class="btn btn-secondary btn-sm" type="submit" value="Cadastrar">
+            </form>
+        </div>
+        <div class="visually-hidden" id="table">
+            <button class="btn btn-secondary btn-sm" onclick="clean()">Limpar Lista</button>
+            <table class="table table-striped table-hover" id="fill_list">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Documento</th>
+                        <th>Id</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
