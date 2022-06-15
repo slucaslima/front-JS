@@ -49,7 +49,7 @@ function register() {
         e.preventDefault();
         const formData = new FormData(this);
         document.getElementById("form").classList.add("visually-hidden");
-        alert("Cadastro com Problema de CORS! Contate o Professor Juliano.");
+        alert("Cadastro com Problema de CORS! Erro no Console, contate o Professor Juliano.");
 
         fetch('https://facec-webapi-2022.herokuapp.com/clientes/', {
             method: "POST",
@@ -80,7 +80,7 @@ function deletar(){
         headers: getHeaders(),
     }).then(response =>
         response.json(),
-        alert("Delete com Problema de CORS! Contate o Professor Juliano.")
+        alert("Delete com Problema de CORS! Erro no Console, contate o Professor Juliano.")
     )
 }
 
